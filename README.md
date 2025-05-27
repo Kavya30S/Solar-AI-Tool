@@ -1,32 +1,91 @@
  This project is an AI-powered tool that analyzes satellite imagery to assess rooftop solar potential, providing installation recommendations and ROI estimates.
 
- ## Project Setup
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+license: apache-2.0
+ 
+### Prerequisites
+Before setting up and running this project, ensure you have the following tools and accounts:
 
- ### Prerequisites
- - Python 3.8+
- - OpenRouter API key (sign up at https://openrouter.ai/)
- - Git (optional for version control)
+1. **Python Environment**
 
- ### Installation
- 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/solar-ai-tool.git
-    cd solar-ai-tool
-    ```
- 2. Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
- 3. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
- 4. Set up the OpenRouter API key:
-    - Create a `.env` file in the project root with:
-      ```bash
-      OPENROUTER_API_KEY=your-api-key-here
-      ```
+   * Install [Anaconda Distribution](https://www.anaconda.com/download) to manage your Python environments efficiently.
+   * Create and activate a new Conda environment:
+
+     ```bash
+     conda create -n solar_ai_env python=3.9
+     conda activate solar_ai_env
+     ```
+
+2. **Code Editor**
+
+   * Use [Visual Studio Code (VSCode)](https://code.visualstudio.com/) for code editing.
+   * Ensure VSCode is configured to recognize the Anaconda environment:
+
+     * Open VSCode.
+     * Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on macOS) to open the command palette.
+     * Select `Python: Select Interpreter` and choose the `solar_ai_env` environment.
+
+3. **Git and GitHub**
+
+   * Install [Git](https://git-scm.com/downloads) for version control.
+   * Set up a [GitHub](https://github.com/) account to access the project repository.([Streamlit Docs][1], [Python in Plain English][2])
+
+4. **Hugging Face Account**
+
+   * Create a [Hugging Face](https://huggingface.co/join) account to access and deploy the application on Spaces.
+
+5. **Project Repository and Files**
+
+   * Clone the project repository:
+
+     ```bash
+     git clone https://github.com/yourusername/solar-ai-assistant.git
+     cd solar-ai-assistant
+     ```
+   * Ensure the following files are present:
+
+     * `app.py`: Main Streamlit application file.
+     * `requirements.txt`: Lists all Python dependencies.
+     * `README.md`: Project documentation.
+     * Sample image files (e.g., `sample_image.jpg`) for testing.
+
+6. **Python Dependencies**
+
+   * Install the required Python packages:
+
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+7. **Streamlit Installation**
+
+   * If not already installed, install Streamlit:
+
+     ```bash
+     pip install streamlit
+     ```
+
+8. **Running the Application Locally**
+
+   * Navigate to the project directory and run the Streamlit app:
+
+     ```bash
+     streamlit run app.py
+     ```
+   * Open the provided local URL in your web browser to interact with the application.([Medium][3], [GitHub][4])
+
+9. **Deployment on Hugging Face Spaces**
+
+   * Log in to your Hugging Face account.
+   * Create a new Space:
+
+     * Choose "Streamlit" as the SDK.
+     * Set the repository to public or private as needed.
+   * Push your project files to the Hugging Face Space repository.
+   * The application will be automatically built and deployed.([Python in Plain English][2], [Hugging Face][5], [YouTube][6])
 
  ### Running the Application
  1. Start the Streamlit app:
@@ -35,21 +94,6 @@
     ```
  2. Open your browser to `http://localhost:8501`.
  3. Upload a satellite image to analyze rooftop solar potential.
- ---
-title: Solar AI Tool
-emoji: ☀️
-colorFrom: yellow
-colorTo: green
-sdk: streamlit
-sdk_version: 1.35.0
-app_file: app.py
-pinned: false
-license: MIT
----
-
-# AI-Powered Rooftop Solar Analysis Tool
-
-This tool analyzes satellite imagery to estimate rooftop solar potential, including roof area, obstacles, and return on investment (ROI). Upload a satellite image to get started!
 
 ## Features
 - Image processing to detect roof characteristics
