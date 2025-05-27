@@ -35,6 +35,35 @@
     ```
  2. Open your browser to `http://localhost:8501`.
  3. Upload a satellite image to analyze rooftop solar potential.
+ ---
+title: Solar AI Tool
+emoji: ☀️
+colorFrom: yellow
+colorTo: green
+sdk: streamlit
+sdk_version: 1.35.0
+app_file: app.py
+pinned: false
+license: MIT
+---
+
+# AI-Powered Rooftop Solar Analysis Tool
+
+This tool analyzes satellite imagery to estimate rooftop solar potential, including roof area, obstacles, and return on investment (ROI). Upload a satellite image to get started!
+
+## Features
+- Image processing to detect roof characteristics
+- Mock API for rooftop analysis
+- Solar potential and ROI calculations
+- Performance metrics for processing and API calls
+
+## Usage
+1. Upload a satellite image (e.g., `static/sample_image.jpg`).
+2. View analysis results and performance metrics.
+3. Check `metrics.log` for detailed logs.
+
+## Requirements
+See `requirements.txt` for dependencies.
 
  ### Example Usage
  - Upload a satellite image of a rooftop (e.g., `static/sample_image.jpg`).
@@ -61,3 +90,4 @@
  - Tilt: 30°
  - Solar Potential: ~5 kWh/day, ~1825 kWh/year
  - Payback Period: ~8 years
+ 
