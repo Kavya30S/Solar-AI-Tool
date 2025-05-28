@@ -134,4 +134,8 @@ See `requirements.txt` for dependencies.
  - Tilt: 30°
  - Solar Potential: ~5 kWh/day, ~1825 kWh/year
  - Payback Period: ~8 years
+
+ ### Zip file:
+  [solar-ai-tool-submission.zip](https://github.com/user-attachments/files/20471996/solar-ai-tool-submission.zip)
+
  
